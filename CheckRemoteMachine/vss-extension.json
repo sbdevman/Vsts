@@ -1,0 +1,82 @@
+{
+    "manifestVersion": 1,
+    "id": "CheckRemoteMachines",
+    "version": "1.0.2",
+    "name": "Check Remote Machines Availability",
+    "publisher": "SaeidBabaei",
+    "public": true,
+    "description": "Check possibility for Connection on Remote Machines",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "extension-icon.png"
+    },
+    "categories": [
+        "Build and release"
+    ],
+    "tags": [
+        "Remote,Machine",
+        "Availability",
+        "telnet,port"
+    ],
+    "screenshots": [
+      {
+         "path": "screen1.png"
+      }
+    ],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        },
+        "license": {
+            "path": "license-terms.md"
+        }
+    },
+    "links": {
+        "home": {
+            "uri": "https://www.saeidbabaei.com/"
+        },
+        "getstarted": {
+            "uri": ""
+        },
+        "learn": {
+            "uri": ""
+        },
+        "support": {
+            "uri": ""
+        },
+        "repository": {
+            "uri": ""
+        },
+        "issues": {
+            "uri": ""
+        }
+    },
+    "branding": {
+        "color": "rgb(4,156,142)",
+        "theme": "dark"
+    },
+    "scopes": [ ] ,
+    "baseUri": "",
+    "files": [
+        {
+            "path": "ChechMachine"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "check-remote-machines",
+            "type": "ms.vss-distributed-task.task",
+            "description": "Check Remote Machines Availability",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "ChechMachine"
+            }
+        }
+    ]
+}
